@@ -1,0 +1,17 @@
+/* client/src/index.css */
+
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:wght@700&family=VT323&display=swap');
+
+/* * This gives us:
+* font-inter: For all modern UI text (soothing).
+* font-arcade: For our neon "arcade" headings.
+* font-lora: For blog post content (classy).
+* font-playfair: For blog post titles (classy).
+*/
+
+body {
+  /* This makes text look smoother, more like a modern app */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

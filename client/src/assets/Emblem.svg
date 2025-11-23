@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Retro arcade ghost emblem - vector SVG (transparent background) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Retro ghost emblem">
+  <title>Retro Ghost Emblem</title>
+  <desc>Stylized retro arcade ghost silhouette with neon outline and eyes. Transparent background, scalable vector.</desc>
+
+  <defs>
+    <!-- neon gradient for body -->
+    <linearGradient id="gNeon" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="50%" stop-color="#8b00ff"/>
+      <stop offset="100%" stop-color="#ff00c8"/>
+    </linearGradient>
+
+    <!-- subtle inner gradient for depth -->
+    <radialGradient id="gFill" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="60%" stop-color="#000000" stop-opacity="0.08"/>
+    </radialGradient>
+
+    <!-- glow filter -->
+    <filter id="fGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- small inner shadow for weight -->
+    <filter id="fInner" x="-20%" y="-20%" width="140%" height="140%">
+      <feOffset dx="0" dy="2" result="off"/>
+      <feGaussianBlur in="off" stdDeviation="3" result="blur2"/>
+      <feComposite in="SourceGraphic" in2="blur2" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Transparent background (nothing filled) -->
+
+  <!-- neon halo behind ghost -->
+  <g transform="translate(256,220)">
+    <ellipse rx="140" ry="60" fill="url(#gNeon)" opacity="0.06" filter="url(#fGlow)"/>
+  </g>
+
+  <!-- ghost body -->
+  <g transform="translate(0,20)">
+    <!-- main shape path (classic ghost with scalloped base) -->
+    <path
+      d="M256 56
+         C176 56 120 116 120 196
+         L120 324
+         C120 340 136 340 148 332
+         L176 308
+         C188 300 204 300 216 308
+         L244 332
+         C256 340 272 340 284 332
+         L312 308
+         C324 300 340 300 352 308
+         L380 332
+         C392 340 408 340 408 324
+         L408 196
+         C408 116 352 56 272 56
+         Z"
+      fill="url(#gNeon)"
+      stroke="#06060a"
+      stroke-width="6"
+      stroke-linejoin="round"
+      filter="url(#fInner)"
+    />
+
+    <!-- inner subtle shading -->
+    <path
+      d="M256 80
+         C200 80 160 120 160 176
+         L160 296
+         C160 308 172 308 180 302
+         L204 286
+         C228 270 284 270 308 286
+         L332 302
+         C340 308 352 308 352 296
+         L352 176
+         C352 120 312 80 256 80
+         Z"
+      fill="url(#gFill)"
+      opacity="0.18"
+    />
+
+    <!-- neon outline (glowing) -->
+    <path
+      d="M256 56
+         C176 56 120 116 120 196
+         L120 324
+         C120 340 136 340 148 332
+         L176 308
+         C188 300 204 300 216 308
+         L244 332
+         C256 340 272 340 284 332
+         L312 308
+         C324 300 340 300 352 308
+         L380 332
+         C392 340 408 340 408 324
+         L408 196
+         C408 116 352 56 272 56
+         Z"
+      fill="none"
+      stroke="url(#gNeon)"
+      stroke-width="10"
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      opacity="0.95"
+      filter="url(#fGlow)"
+    />
+  </g>
+
+  <!-- eyes (classic ghost look) -->
+  <g transform="translate(0,20)">
+    <!-- left eye -->
+    <ellipse cx="200" cy="188" rx="28" ry="34" fill="#ffffff" />
+    <circle cx="196" cy="178" r="10" fill="#06060a" />
+    <!-- right eye -->
+    <ellipse cx="312" cy="188" rx="28" ry="34" fill="#ffffff" />
+    <circle cx="308" cy="178" r="10" fill="#06060a" />
+    <!-- subtle eye glow -->
+    <ellipse cx="200" cy="188" rx="28" ry="34" fill="url(#gNeon)" opacity="0.08" filter="url(#fGlow)"/>
+    <ellipse cx="312" cy="188" rx="28" ry="34" fill="url(#gNeon)" opacity="0.08" filter="url(#fGlow)"/>
+  </g>
+</svg>
