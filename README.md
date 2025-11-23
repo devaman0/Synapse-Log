@@ -1,6 +1,6 @@
-# 📝 QuillBoard | MERN Blogging Platform
+# 🧠Synapse Log | MERN Blogging Platform
 
-**QuillBoard** is a full‑stack blog application built using the **MERN stack (MongoDB, Express, React, Node.js)**.
+**Synapse Log** is a full‑stack blog application built using the **MERN stack (MongoDB, Express, React, Node.js)**.
 Created as a **minor project**, this application provides a clean, modern interface along with a secure backend for user authentication and post management.
 
 Users can **register**, **log in**, and manage their own posts with complete **CRUD functionality**.
