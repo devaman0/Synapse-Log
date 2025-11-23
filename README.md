@@ -139,6 +139,6 @@ http://localhost:5173
 
 ## 🧑‍💻 Author
 
-**Annu Singh**
+**Aman Prasad Singh**
 
 ---
